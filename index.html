@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Lea</title>
+    <title>Love Dillah</title>
     <style>
         :root {
             --bg-black: #0f0a10;
@@ -142,9 +143,17 @@
         }
 
         @keyframes movingBorders {
-            0% { border-color: #ffd4e8; }
-            50% { border-color: #ff9fca; }
-            90% { border-color: #ffd4e8; }
+            0% {
+                border-color: #ffd4e8;
+            }
+
+            50% {
+                border-color: #ff9fca;
+            }
+
+            90% {
+                border-color: #ffd4e8;
+            }
         }
 
         .love-btn:hover {
@@ -174,11 +183,25 @@
         }
 
         @keyframes beatingHeart {
-            0% { transform: scale(1); }
-            15% { transform: scale(1.15); }
-            30% { transform: scale(1); }
-            45% { transform: scale(1.15); }
-            60% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            15% {
+                transform: scale(1.15);
+            }
+
+            30% {
+                transform: scale(1);
+            }
+
+            45% {
+                transform: scale(1.15);
+            }
+
+            60% {
+                transform: scale(1);
+            }
         }
 
         .love-btn:hover .empty {
@@ -250,11 +273,7 @@
             background: #120c12;
             box-shadow: 0 14px 30px rgba(0, 0, 0, 0.5);
             transform:
-                translate3d(var(--dx), var(--dy), var(--depth))
-                rotate(var(--rot))
-                rotateX(var(--tilt-x))
-                rotateY(var(--tilt-y))
-                scale(var(--drag-scale, 1));
+                translate3d(var(--dx), var(--dy), var(--depth)) rotate(var(--rot)) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) scale(var(--drag-scale, 1));
             top: var(--top);
             left: var(--left);
             transition: box-shadow 260ms ease, transform 260ms ease;
@@ -459,24 +478,17 @@
         @keyframes drift3d {
             0% {
                 transform:
-                    translate3d(var(--dx), var(--dy), var(--depth))
-                    rotate(var(--rot))
-                    rotateX(var(--tilt-x))
-                    rotateY(var(--tilt-y));
+                    translate3d(var(--dx), var(--dy), var(--depth)) rotate(var(--rot)) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
             }
+
             50% {
                 transform:
-                    translate3d(calc(var(--dx) + var(--float-x)), calc(var(--dy) + var(--float-y)), calc(var(--depth) + 20px))
-                    rotate(calc(var(--rot) + 1deg))
-                    rotateX(calc(var(--tilt-x) + 1deg))
-                    rotateY(calc(var(--tilt-y) - 1deg));
+                    translate3d(calc(var(--dx) + var(--float-x)), calc(var(--dy) + var(--float-y)), calc(var(--depth) + 20px)) rotate(calc(var(--rot) + 1deg)) rotateX(calc(var(--tilt-x) + 1deg)) rotateY(calc(var(--tilt-y) - 1deg));
             }
+
             100% {
                 transform:
-                    translate3d(var(--dx), var(--dy), var(--depth))
-                    rotate(var(--rot))
-                    rotateX(var(--tilt-x))
-                    rotateY(var(--tilt-y));
+                    translate3d(var(--dx), var(--dy), var(--depth)) rotate(var(--rot)) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
             }
         }
 
@@ -484,6 +496,7 @@
             from {
                 transform: translateX(-120%);
             }
+
             to {
                 transform: translateX(120%);
             }
@@ -494,10 +507,12 @@
                 transform: translate(0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
                 opacity: 1;
             }
+
             50% {
                 transform: translate(var(--tx), var(--ty)) rotateX(45deg) rotateY(45deg) rotateZ(180deg) scale(0.8);
                 opacity: 1;
             }
+
             100% {
                 transform: translate(var(--tx), var(--ty)) rotateX(90deg) rotateY(180deg) rotateZ(360deg) scale(0.2);
                 opacity: 0;
@@ -505,8 +520,13 @@
         }
 
         @keyframes slideInfinite {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
         }
 
         @keyframes cardIn {
@@ -514,6 +534,7 @@
                 opacity: 0;
                 transform: translate(0, 40px) rotate(0deg) scale(0.92);
             }
+
             to {
                 opacity: 1;
             }
@@ -524,9 +545,11 @@
                 transform: translateY(105vh) rotate(0deg);
                 opacity: 0;
             }
+
             15% {
                 opacity: 1;
             }
+
             to {
                 transform: translateY(-10vh) rotate(360deg);
                 opacity: 0;
@@ -538,6 +561,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -582,6 +606,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="ambient" aria-hidden="true" id="ambient"></div>
 
@@ -592,17 +617,21 @@
     <main class="page">
         <section class="screen is-active" id="page1">
             <div class="intro-box">
-                <h1 class="intro-title">I LOVE U LEA</h1>
+                <h1 class="intro-title">I LOVE U DILLAH</h1>
                 <p class="intro-text">klik ini buat halaman selanjutnya</p>
                 <div class="button-wrap">
                     <button class="love-btn" type="button" data-go="page2" aria-label="Next Page">
                         <span>Next Page</span>
                         <span class="icon-wrap">
                             <svg class="empty" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                </path>
                             </svg>
                             <svg class="filled" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                </path>
                             </svg>
                         </span>
                     </button>
@@ -625,10 +654,12 @@
         <section class="screen" id="page3">
             <div style="width: 100%; display: flex; flex-direction: column; gap: 24px;">
                 <h2 class="section-title">Kata Kata Buat Kamu</h2>
-                
+
                 <div class="quotes-container">
                     <article class="quote-card" data-quote-id="0">
-                        <p>"aku mau kamu dengan keadaan ga terpaksa, so i'll be waiting and always beside u lea jadi selalu jadi diri kamu yaaa jangan pernah memaksa untuk berubah menjadi orang lain be ur self dan aku bakalan suka sama kamu yang menjadi diri kamu sendiri❤️"</p>
+                        <p>"aku mau kamu dengan keadaan ga terpaksa, so i'll be waiting and always beside u Dillah jadi
+                            selalu jadi diri kamu yaaa jangan pernah memaksa untuk berubah menjadi orang lain be ur self
+                            dan aku bakalan suka sama kamu yang menjadi diri kamu sendiri❤️"</p>
                         <div class="quote-actions">
                             <small>for you, always</small>
                             <button class="heart-btn" type="button" aria-label="Like this quote">
@@ -637,9 +668,11 @@
                             </button>
                         </div>
                     </article>
-                    
+
                     <article class="quote-card" data-quote-id="1">
-                        <p>"aku serius sama kamu, kamu bingung pasti aku ngomong gitu karena kita belum pernah ketemu, tapi aku ngomong gini karena aku suka sama kamu, jadi seapapun seberapapun segimanapun aku tetep pilih kamu buat sekarang dan masa depanku❤️"</p>
+                        <p>"aku serius sama kamu, kamu bingung pasti aku ngomong gitu karena kita belum pernah ketemu,
+                            tapi aku ngomong gini karena aku suka sama kamu, jadi seapapun seberapapun segimanapun aku
+                            tetep pilih kamu buat sekarang dan masa depanku❤️"</p>
                         <div class="quote-actions">
                             <small>today, tomorrow, forever</small>
                             <button class="heart-btn" type="button" aria-label="Like this quote">
@@ -648,9 +681,10 @@
                             </button>
                         </div>
                     </article>
-                    
+
                     <article class="quote-card" data-quote-id="2">
-                        <p>"kadang aku ngerasa tenang banget cuma dari chat kamu, sesimpel itu tapi efeknya bisa bikin hari aku jauh lebih baik, jadi jangan bosen ya kalo aku sering nyariin kamu❤️"</p>
+                        <p>"kadang aku ngerasa tenang banget cuma dari chat kamu, sesimpel itu tapi efeknya bisa bikin
+                            hari aku jauh lebih baik, jadi jangan bosen ya kalo aku sering nyariin kamu❤️"</p>
                         <div class="quote-actions">
                             <small>my calm place</small>
                             <button class="heart-btn" type="button" aria-label="Like this quote">
@@ -659,9 +693,10 @@
                             </button>
                         </div>
                     </article>
-                    
+
                     <article class="quote-card" data-quote-id="3">
-                        <p>"aku ga butuh yang paling sempurna, aku cuma butuh kamu yang selalu jujur jadi diri kamu sendiri, karena versi kamu yang itu yang bikin aku nyaman banget❤️"</p>
+                        <p>"aku ga butuh yang paling sempurna, aku cuma butuh kamu yang selalu jujur jadi diri kamu
+                            sendiri, karena versi kamu yang itu yang bikin aku nyaman banget❤️"</p>
                         <div class="quote-actions">
                             <small>only you</small>
                             <button class="heart-btn" type="button" aria-label="Like this quote">
@@ -670,9 +705,10 @@
                             </button>
                         </div>
                     </article>
-                    
+
                     <article class="quote-card" data-quote-id="4">
-                        <p>"kalo nanti jalannya pelan gapapa, yang penting kita sama-sama jalan dan saling jagain, aku ada bukan cuma buat hari ini tapi buat hari-hari setelahnya juga❤️"</p>
+                        <p>"kalo nanti jalannya pelan gapapa, yang penting kita sama-sama jalan dan saling jagain, aku
+                            ada bukan cuma buat hari ini tapi buat hari-hari setelahnya juga❤️"</p>
                         <div class="quote-actions">
                             <small>slowly but surely</small>
                             <button class="heart-btn" type="button" aria-label="Like this quote">
@@ -876,7 +912,7 @@
 
         const bgMusic = document.getElementById('bgMusic');
         const tryPlayMusic = () => {
-            bgMusic.play().catch(() => {});
+            bgMusic.play().catch(() => { });
         };
 
         window.addEventListener('load', tryPlayMusic);
@@ -939,4 +975,5 @@
         });
     </script>
 </body>
+
 </html>
